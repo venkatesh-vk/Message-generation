@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+    <style>
+        input[type=text], select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+
+        input[type=date], select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        
+        input[type=submit] {
+          width: 100%;
+          background-color: #4CAF50;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        div {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+        }
+        </style>
+<body>
+
+<div>
+<form action = "http://127.0.0.1:5000/create_msg", method="GET">
+
+    <label > DAILY REPORT AS ON</label>
+    <input type="date" id="dailyreport" name="dailyreport",maxlength=12>
+
+    <br>
+
+    <label > DATE </label>
+    <input type="date" id="date" name="date",maxlength=12> <br><br>
+
+    <label > OPENING STOCK </label><br>
+    <label > LIQ </label>
+    <input type="text" id="oliq" name="oliq",maxlength=50> <br>
+
+    <label > GRO</label>
+    <input type="text" id="ogro" name="ogro",maxlength=50> <br><br>
+
+    <label > DAILY SALE </label>
+    <input type="date" id="ds" name="ds",maxlength=50> <br>
+
+    <label > LIQ</label>
+    <input type="text" id="dliq" name="dliq",maxlength=50> <br>
+
+    <label > GRO</label>
+    <input type="text" id="dgro" name="dgro",maxlength=50> <br><br>
+
+    <label > MONTLY SALE</label>
+    <label > TOTAL</label>
+    <input type="text" id="total" name="total",maxlength=50> <br><br>
+    
+    <label > CLSOING STOCK</label>
+    <label > LIQ</label>
+    <input type="text" id="cliq" name="cliq",maxlength=50> <br>
+
+    <label > GRO</label>
+    <input type="text" id="cgro" name="cgro",maxlength=50> <br><br>
+
+    <label > DIGITAL TRANSACTION</label>
+    <input type="text" id="dt" name="dt",maxlength=50> <br>
+
+    <label > CASH TRANSACTION</label>
+    <input type="text" id="ct" name="ct",maxlength=50> <br><br>
+
+    <label > BANK BALANCE</label>
+    <label > Rs</label>
+    <input type="text" id="rs" name="rs",maxlength=50> <br>
+
+    <label > URC A/C</label>
+    <input type="text" id="urc" name="urc",maxlength=50> <br><br>
+
+    <label > BRONZE CARD</label>
+    <input type="text" id="bc" name="bc",maxlength=50> <br>
+
+    <label > LIQ</label>
+    <input type="text" id="liq" name="liq",maxlength=50> <br>
+
+    <label > GRO</label>
+    <input type="text" id="gro" name="gro",maxlength=50> <br>
+
+
+    <button type="submit" name="submit">Submit</button>
+
+</div>
+</form>
+</body>
+</html>
